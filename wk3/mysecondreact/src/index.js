@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const myfirstelement = <h2>Welcome to my first react app</h2>
+class Student extends React.Component {
+    constructor(){
+        super();
+        this.state = {webDesign: "like"};
+    }
+    render(){
+        return <h2>i am a student who {this.state.webDesign}s web design </h2>
+    }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+ReactDOM.render(<Student />, document.getElementById('root'));
