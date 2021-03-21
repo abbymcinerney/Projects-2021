@@ -13,3 +13,17 @@
 .dark-background{
     background-color: darkred;
 }
+
+section{
+    width: 45%;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+}
+
+.csym019{
+    background-color: #9af8ff;
+}
+.csym015{
+    background-color: #b1ff99;
+}
