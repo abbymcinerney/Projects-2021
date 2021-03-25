@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+ "nav main aside"
+ "footer footer footer";
+}
+
+header{
+    background-color: #ffc1fc;
+    color: #111111;
+    padding: 20px;
+    grid-area: header;
+}
+
+nav{
+    background-color: #999999;
+    color: #111111;
+    grid-area: nav;
+}
+
+main{
+    background-color: #ffffff;
+    color: #242424;
+    grid-area: main;
+}
+
+aside{
+    background-color: #492140;
+    color: #ffffff;
+    grid-area: aside;
+}
+
+footer{
+    background-color: #ffd5ee;
+    color: #383838;
+    grid-area: footer;
+}
